@@ -1,2 +1,1 @@
-# pjatkLab01
-Moje pierwsze repo 
+# Moje pierwsze repozytorium
