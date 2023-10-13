@@ -1,0 +1,41 @@
+1.Uruchom terminal. - Uruchamiam Virtual Boxa, w maszynie inicjuje program Linux Lite, uruchamiam terminal.
+
+2.Wyświetl zawartość aktualnego katalogu. - W terminalu wpisuje komende ls [l]ist file[s] Program odpowiada "No such file or directory".
+
+3.Sprawdź gdzie aktualnie się znajdujesz. - W terminalu wpisuje komende "pwd" terminal odpowiada  /home/osboxes
+
+4.Przejdź do katalogu Pulpit za pomocą ścieżki względnej -  Wpisuje komende cd Desktop
+
+5.Sprawdź gdzie jesteś. - Znowu wpisuje komende "pwd" terminal odpowiada /home/osboxes/Desktop
+
+6.Wyświetl zawartość bieżącego katalogu. - Wpisuje komende  ls [f]ile [l]ist ze sciezka /home/osboxes/Desktop
+
+7.Wyświetl zawartość swojego katalogu domowego bez przechodzenia do niego (ls z odpowiednim parametrem). ls /home/osboxes
+
+8.Przejdź do katalogu Obrazy (lub innego katalogu, który jest dostępny - podaj wprost, że zmieniasz katalog na inny bo np. Obrazy nie są u Ciebie dostępne) w twoim katalogu domowym za pomocą ścieżki względnej.
+cd ././Pictures
+9.Sprawdź gdzie jesteś.
+pwd terminal- /home/osboxes/Pictures
+
+10.Zobacz do jakiego katalogu przejdziesz za pomocą ścieżki ././././././
+W opisie rozwiązania proszę umieścić również to jak rozumiesz co się właściwie stało.
+dlaczego znalazła/eś się w tym miejscu do którego przeniosła Cię ta ścieżka?
+Czy dodanie kilku ./././././ na początku/środku/końcu powoduje, że ścieżka się zmieni?
+Co ta ścieżka oznacza/sobą reprezentuje?
+
+Nie przejde do żadnej scieżki, gdyż nie podałem do jakiego katalogu chce się przenieść, jestem w ten samej scieżce co byłem, nawet po dodaniu  ./././././ (Sprawdziłem komenda pwd)
+Ta scieżka mówi o aktualnym katalogu, nie podałem końcowej ścieżki.
+
+
+11.Przejdź do swojego katalogu domowego za pomocą ścieżki bezwzględnej.  - cd /home/osboxes
+
+12.Zobacz co się stanie jak wpiszesz komendę 'cd /root'. Jak już to zrobisz, zastanów się co się stało. Poszukaj w Internecie.
+
+Po wpisaniu cd /root terminal odpowiedział "Permission denied" Terminal odrzucił, gdyż nie mam uprawnień do wykonania tej komendy.
+
+13.Zadanie 13 i 14 trzeba wykonać na maszynie wirtualnej lub na fizycznym komputerze. Nie można go zrobić zdalnie na szuflandii.
+Zobacz, co się stanie, jeśli wciśniesz kombinację klawiszy: Ctrl+Alt+F3
+Sprawdź w Internecie co się dzieje kiedy używa się takiej kombinacji. W Internecie mogą pojawić się wersje z F1-F6. To de facto to samo.
+Odpowiedź "wylogowało mnie" jest błędna. Nie. Nie wylogowało. Szukaj dalej.
+
+14.A teraz co się stanie po: Alt+F1 lub ALT+F2 lub ALT+F7 (na starszych linuxach)

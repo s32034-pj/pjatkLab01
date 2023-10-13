@@ -1,0 +1,10 @@
+Damian Sowiński s32034
+2023.10.10
+1.Nauczyłem się z filmiku, jak zrobic maszyne wirtualną i jak uruchomić w nim linuxa.
+Po zrobieniu zadań, nauczyłem się jak prouszać się po katologach w Linuxie. Oraz nauczyłem się o scieżkach względnych i bezwględnych.
+
+
+2. 13.10.2023
+
+Przystąpiłem do zadań  z tworzenia katalogów. Pojąłem jak stworzyć oraz usunąć dany katalog, nawet z plikami. Nauczyłem się  tworzyć jedną komendą wiele podfolderów oraz usuwać pliki z istniejącymi w niej plikami.
+Miałem problem z usunięciem folderu z plikiem, ale znalazłem rozwiązanie na internecie. Oraz też nauczyłem się cofać do poprzedniego folderu komenda "cd..".
