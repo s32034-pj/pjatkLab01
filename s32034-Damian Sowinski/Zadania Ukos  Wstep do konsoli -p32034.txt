@@ -10,12 +10,12 @@
 
 6.Wyświetl zawartość bieżącego katalogu. - Wpisuje komende  ls [f]ile [l]ist ze sciezka /home/osboxes/Desktop
 
-7.Wyświetl zawartość swojego katalogu domowego bez przechodzenia do niego (ls z odpowiednim parametrem). ls /home/osboxes
+7.Wyświetl zawartość swojego katalogu domowego bez przechodzenia do niego (ls z odpowiednim parametrem).- ls /home/osboxes
 
 8.Przejdź do katalogu Obrazy (lub innego katalogu, który jest dostępny - podaj wprost, że zmieniasz katalog na inny bo np. Obrazy nie są u Ciebie dostępne) w twoim katalogu domowym za pomocą ścieżki względnej.
-cd ././Pictures
+-cd ././Pictures
 9.Sprawdź gdzie jesteś.
-pwd terminal- /home/osboxes/Pictures
+-pwd terminal- /home/osboxes/Pictures
 
 10.Zobacz do jakiego katalogu przejdziesz za pomocą ścieżki ././././././
 W opisie rozwiązania proszę umieścić również to jak rozumiesz co się właściwie stało.
@@ -23,7 +23,7 @@ dlaczego znalazła/eś się w tym miejscu do którego przeniosła Cię ta ście�
 Czy dodanie kilku ./././././ na początku/środku/końcu powoduje, że ścieżka się zmieni?
 Co ta ścieżka oznacza/sobą reprezentuje?
 
-Nie przejde do żadnej scieżki, gdyż nie podałem do jakiego katalogu chce się przenieść, jestem w ten samej scieżce co byłem, nawet po dodaniu  ./././././ (Sprawdziłem komenda pwd)
+-Nie przejde do żadnej scieżki, gdyż nie podałem do jakiego katalogu chce się przenieść, jestem w ten samej scieżce co byłem, nawet po dodaniu  ./././././ (Sprawdziłem komenda pwd)
 Ta scieżka mówi o aktualnym katalogu, nie podałem końcowej ścieżki.
 
 
@@ -31,11 +31,57 @@ Ta scieżka mówi o aktualnym katalogu, nie podałem końcowej ścieżki.
 
 12.Zobacz co się stanie jak wpiszesz komendę 'cd /root'. Jak już to zrobisz, zastanów się co się stało. Poszukaj w Internecie.
 
-Po wpisaniu cd /root terminal odpowiedział "Permission denied" Terminal odrzucił, gdyż nie mam uprawnień do wykonania tej komendy.
+-Po wpisaniu cd /root terminal odpowiedział "Permission denied" Terminal odrzucił, gdyż nie mam uprawnień do wykonania tej komendy.
 
 13.Zadanie 13 i 14 trzeba wykonać na maszynie wirtualnej lub na fizycznym komputerze. Nie można go zrobić zdalnie na szuflandii.
 Zobacz, co się stanie, jeśli wciśniesz kombinację klawiszy: Ctrl+Alt+F3
 Sprawdź w Internecie co się dzieje kiedy używa się takiej kombinacji. W Internecie mogą pojawić się wersje z F1-F6. To de facto to samo.
 Odpowiedź "wylogowało mnie" jest błędna. Nie. Nie wylogowało. Szukaj dalej.
 
+-Wyświetlił mi  się ekran logowania na linuxa, myślę  że jest to skrót do wirtualnego terminala.
+
 14.A teraz co się stanie po: Alt+F1 lub ALT+F2 lub ALT+F7 (na starszych linuxach)
+
+Napisy na terminalu zniknęły.
+
+
+
+
+
+1.Korzystając z komend cd oraz mkdir stwórz następujące drzewo katalogów w swoim katalogu domowym (w dowolnym podkatalogu, albo bezpośrednio w ~): 
+
+ukos
+
+ |\ katalog
+
+ |   |\ katalog2
+
+ |    \ katalog3
+
+  \ klamka
+
+-mkdir ukos, cd ukos, mkdir klamka, mkdir katalog, cd katalog, mkdir katalog2, cd katalog2, mkdir katalog 3
+
+2.W katalogu ukos/klamka stwórz pliki zajęcia2.txt zajęcia2.log inny.txt nowy.txt
+
+-Cofam się do katalogu "ukos" - .. cd, .. cd. Wchodzę na katalog "klamka" -cd klamka, tworzę pliki txt.- mkdir zajęcia2.txt, mkdir zajęcia2.txt, mkdir zajęcia2.log, mkdir inny.txt, mkdir nowy.txt 
+
+3.Za pomocą jednego polecenia mkdir stwórz w katalogu ukos następujący katalog: ukos/to/jest/dluga/nazwa
+
+następnie umieść w katalogu ukos/to/jest/dluga/nazwa plik dane.txt
+
+-Cofam się używając komendy  "cd.."  Wpisuję komende:  mkdir -p to/jest/dluga/nazwa
+
+-Wrzucam teraz plik "dane.txt" : cd to, cd jest, cd dluga, cd nazwa, mkdir dane.txt
+
+5.Usuń z katalogu ukos/klamka wszystkie pliki z rozszerzeniem txt
+cd klamka, rmdir *txt 
+
+6.Usuń katalog ukos/katalog/katalog2
+
+Cofam się do  katalogu ukos cd .. ,  rm -r katalog2
+
+
+7.Usuń cały katalog klamka za pomocą jednego polecenia
+
+Cofam się znów do ukos cd .. , rm -r klamka
